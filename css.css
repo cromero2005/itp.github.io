@@ -1,0 +1,129 @@
+/* Establece el margen y padding en cero para todos los elementos, y asegura que el tamaño del contenedor incluya el borde y el padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Define la fuente utilizada en todo el cuerpo */
+    line-height: 1.6; /* Establece el espacio entre líneas para mejorar la legibilidad */
+    background-color: #f4f4f4; /* Aplica un color de fondo claro a la página */
+}
+
+/* Estilos para el encabezado (header) */
+header {
+    background-color: #a4a4eb; /* Fondo oscuro (gris) */
+    color: white; /* Color del texto en blanco para contrastar con el fondo oscuro */
+    padding: 20px; /* Añade espacio dentro del contenedor del header */
+    text-align: center; /* Centra el texto dentro del header */
+}
+
+/* Estilo para el título principal (h1) dentro del header */
+h1 {
+    font-size: 2.5em; /* Define un tamaño de fuente grande para el título principal */
+}
+
+/* Estilo para todos los párrafos (p) */
+p {
+    font-size: 1.2em; /* Aumenta ligeramente el tamaño del texto de los párrafos */
+}
+
+/* Estilos generales para las secciones de la página */
+.city-description, .activities, .price, .reservation-form {
+    padding: 20px; /* Añade espacio interior dentro de cada sección */
+    margin: 20px auto; /* Añade espacio exterior arriba y abajo, centrando la sección en la página */
+    max-width: 800px; /* Limita el ancho máximo de cada sección a 800 píxeles */
+    background-color: white; /* Aplica un fondo blanco a cada sección */
+    border-radius: 8px; /* Bordes ligeramente redondeados en las esquinas */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil alrededor de cada sección para dar un efecto de elevación */
+}
+
+/* Estilo para los títulos de nivel 2 (h2) dentro de cada sección */
+.city-description h2, .activities h2, .price h2, .reservation-form h2 {
+    font-size: 1.8em; /* Tamaño de fuente grande para los títulos */
+    color: #a4a4eb; /* Color de texto gris oscuro */
+    margin-bottom: 10px; /* Añade espacio debajo del título */
+}
+
+/* Estilo para los párrafos dentro de las secciones */
+.city-description p, .activities ul, .price p {
+    font-size: 1.1em; /* Ajuste leve del tamaño del texto */
+}
+
+/* Estilos para el contenedor de las imágenes dentro de la sección de la ciudad */
+.images {
+    display: flex; /* Usa flexbox para alinear las imágenes en una fila */
+    justify-content: space-around; /* Distribuye el espacio de manera equitativa entre las imágenes */
+    margin-top: 20px; /* Añade un margen superior para separar las imágenes del texto */
+}
+
+/* Estilo para cada imagen */
+.images img {
+    width: 30%; /* Cada imagen ocupa el 30% del ancho del contenedor */
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para crear un efecto de profundidad */
+}
+
+/* Estilos para la lista de actividades */
+.activities ul {
+    list-style-type: square; /* Cambia los puntos de la lista a cuadrados */
+    padding-left: 20px; /* Añade espacio a la izquierda para que los puntos de la lista no queden pegados al borde */
+}
+
+/* Estilo para cada elemento de la lista de actividades */
+.activities li {
+    margin: 10px 0; /* Añade espacio entre cada actividad de la lista */
+}
+
+/* Estilo del precio total del viaje */
+.price p {
+    font-size: 1.5em; /* Texto más grande para destacar el precio */
+    color: #00913f; /* Color rojo para llamar la atención sobre el precio */
+    font-weight: bold; /* El precio está en negrita para darle mayor énfasis */
+}
+
+/* Estilos para el formulario de reserva */
+form {
+    display: flex; /* Usa flexbox para organizar los elementos del formulario en una columna */
+    flex-direction: column; /* Alinea los elementos del formulario verticalmente */
+}
+
+/* Estilos para las etiquetas (label) dentro del formulario */
+label {
+    margin-bottom: 5px; /* Añade espacio debajo de cada etiqueta */
+    font-weight: bold; /* Las etiquetas están en negrita para destacarlas */
+}
+
+/* Estilos para los campos de texto y correo electrónico en el formulario */
+input[type="text"], input[type="email"] {
+    padding: 10px; /* Añade espacio dentro de los campos */
+    margin-bottom: 15px; /* Añade espacio debajo de cada campo */
+    border-radius: 5px; /* Bordes redondeados en los campos de entrada */
+    border: 1px solid #ccc; /* Borde gris claro alrededor de los campos */
+}
+
+/* Estilos para el botón de envío del formulario */
+input[type="submit"] {
+    padding: 10px; /* Añade espacio dentro del botón */
+    background-color: #00913f; /* Fondo oscuro (gris) */
+    color: white; /* Texto blanco dentro del botón */
+    border: none; /* Sin borde alrededor del botón */
+    border-radius: 5px; /* Bordes redondeados en el botón */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar por el botón */
+}
+
+/* Estilo para cuando el botón de envío se pasa por encima (hover) */
+input[type="submit"]:hover {
+    background-color: #00913f; /* Cambia el fondo a un gris más claro cuando se pasa el cursor sobre el botón */
+}
+
+/* Estilos para el pie de página (footer) */
+footer {
+    text-align: center; /* Centra el texto en el pie de página */
+    padding: 20px; /* Añade espacio dentro del pie de página */
+    background-color: #a4a4eb; /* Fondo oscuro (gris) */
+    color: white; /* Texto en blanco para contrastar con el fondo */
+    margin-top: 20px; /* Añade un margen superior para separar el pie de página del contenido principal */
+}
